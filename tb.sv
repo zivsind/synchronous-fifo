@@ -1,6 +1,12 @@
 `timescale 1ns/1ps
 
-module tb_fifo;
+module sync_fifo_tb;
+	// Enable waveform dumping for EPWave (EDA Playground visualization)
+// Generates dump.vcd file used to view signals after simulation
+	initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars(0, sync_fifo_tb);
+	end
 
     localparam int WIDTH = 8;
     localparam int DEPTH = 8;
@@ -19,7 +25,7 @@ module tb_fifo;
 	logic wrap_error_flag;
 
 
-    fifo #(
+    sync_fifo #(
         .WIDTH(WIDTH),
         .DEPTH(DEPTH)
     ) dut (
@@ -207,3 +213,4 @@ module tb_fifo;
     end
 
 endmodule
+
