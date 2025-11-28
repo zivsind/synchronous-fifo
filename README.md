@@ -5,9 +5,9 @@ This project implements a **fully parameterized synchronous FIFO** in SystemVeri
 
 ---
 
-##  Project Highlights
+##  Features
 
-### **Parametric FIFO Design**
+### **Parametric Synchronous FIFO (DUT)**
 - Fully configurable:
   - `WIDTH` – data width  
   - `DEPTH` – number of entries  
