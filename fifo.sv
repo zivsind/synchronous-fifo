@@ -1,4 +1,4 @@
-module fifo #(
+module sync_fifo #(
     parameter int WIDTH = 8,
     parameter int DEPTH = 8
 )
@@ -48,4 +48,5 @@ module fifo #(
     assign full  = (count == DEPTH);
 
 endmodule
+
 
