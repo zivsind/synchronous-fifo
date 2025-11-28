@@ -44,8 +44,8 @@ A SystemVerilog queue that acts as the golden model for comparison with DUT outp
 ```
 /Synchronous FIFO
 │
-├── fifo.sv     # FIFO RTL design (parameterized)
-├── tb.sv       # Self‑checking testbench with reference model
+├── sync_fifo.sv     # FIFO RTL design (parameterized)
+├── sync_fifo_tb.sv       # Self‑checking testbench with reference model
 └── README.md   # Project description
 ```
 
