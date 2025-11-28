@@ -59,7 +59,7 @@ This design is compatible with:
 - Run the design online in EDA Playground: https://edaplayground.com/x/SzCt
 
 ### Steps:
-1. Add both `fifo.sv` and `tb.sv` to the simulator.
+1. Add both `sync_fifo.sv` and `sync_fifo_tb.sv` to the simulator.
 2. Compile.
 3. Run the simulation.
 4. Check the console output for PASS/FAIL messages.
